@@ -1,0 +1,58 @@
+.list__user {
+  height: 400px;
+  padding: 10px;
+height: 100vh;
+  .status {
+    color: red;
+  }
+  .list__user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .list__user-header_title {
+      color: var(--main-color);
+      font-weight: bold;
+      margin: 1rem 0;
+      font-size: 26px;
+    }
+    button {
+      margin-right: 2rem;
+    }
+  }
+
+  .list_user-action {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-around;
+    font-size: 13px;
+
+    .list_user-action_view {
+      border: 1px solid var(--main-color);
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: var(--main-color);
+      cursor: pointer;
+    }
+    .list_user-action_delete {
+      border: 1px solid red;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: red;
+      cursor: pointer;
+    }
+  }
+
+  .list__user-table {
+    overflow: scroll;
+    max-height: 500px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

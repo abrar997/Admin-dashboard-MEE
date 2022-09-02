@@ -1,0 +1,77 @@
+// ub can use gap with flex box as margin
+
+.home__widget {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  background: lightblue;
+  
+  a {
+    color: var(--main-color);
+  }
+  .home__widget-left,
+  .home__widget-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .home__widget-left {
+    .home__widget-left_title {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: capitalize;
+      font-family: var(--font-alt);
+      //   color: var(--color-gray);
+    }
+
+    .home__widget-left_counter {
+      font-size: 20px;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+    .home__widget-left_link {
+      font-size: 15px;
+      margin-top: 10px;
+      width: max-content;
+    }
+  }
+
+  .home__widget-right {
+    .home__widget-right_percentage {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      &.positive {
+        color: green;
+      }
+      &.negative {
+        color: red;
+      }
+    }
+    svg {
+      font-size: 18px;
+    }
+
+    .home__widget-right-icon {
+      padding: 5px;
+      border-radius: 5px;
+      align-self: flex-end;
+      background-color: var(--color-white);
+    }
+  }
+}
+
+.home__widget:nth-child(1) {
+  background-color: lightpink;
+}
+.home__widget:nth-child(3) {
+  background-color: lightcyan;
+}
+
+.home__widget:nth-child(4) {
+  background-color: lightgray;
+}

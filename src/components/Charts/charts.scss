@@ -1,0 +1,14 @@
+.home__charts {
+  flex: 5;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 20px;
+
+  .home__charts-title {
+    color: var(--main-color);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
